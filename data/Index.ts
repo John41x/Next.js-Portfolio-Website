@@ -38,8 +38,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "I strive to Innovate",
-      description: "one step at a time",
+      title: "Maximize the user experience",
+      description: "My Goal is to",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",

@@ -91,16 +91,16 @@ export const navItems = [
       title: "Coordinating HackUTD",
       des: "The Largest Hackathon in America",
       img: " ",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      iconLists: [],
       link: "/ui.aiimg.com",
     },
     {
       id: 4,
       title: "Workout Buddy",
-      des: "AI Powered Workout Tracker",
+      des: "ML Enhanced Workout Tracker",
       img: " ",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "/ui.apple.com",
+      iconLists: ["/next.svg", "/ts.svg", "/python.svg", "/tail.svg", "/scikit-learn.svg"],
+      link: "https://github.com/John41x",
     },
   ];
   

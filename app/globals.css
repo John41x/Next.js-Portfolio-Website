@@ -2,67 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* Updated light mode color scheme with sage/olive green */
+    --background: 115 8% 52%; /* sage background */
+    --foreground: 45 14% 28%; /* dark text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 115 8% 52%;
+    --card-foreground: 45 14% 28%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 115 8% 52%;
+    --popover-foreground: 45 14% 28%;
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 31 96% 40%; /* amber */
+    --primary-foreground: 45 33% 94%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 82 22% 36%; /* olive */
+    --secondary-foreground: 45 33% 94%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 115 8% 42%;
+    --muted-foreground: 0 0% 100%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 115 12% 65%;
+    --accent-foreground: 20 15% 16%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 45 33% 94%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
+    --border: 115 8% 47%;
+    --input: 115 8% 47%;
+    --ring: 31 96% 40%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Updated dark mode color scheme */
+    --background: 115 8% 30%; /* darker sage background */
+    --foreground: 45 33% 94%; /* light text */
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 115 8% 30%;
+    --card-foreground: 45 33% 94%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 115 8% 30%;
+    --popover-foreground: 45 33% 94%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 31 96% 40%; /* amber */
+    --primary-foreground: 45 33% 94%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 82 22% 36%; /* olive */
+    --secondary-foreground: 45 33% 94%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 115 8% 20%;
+    --muted-foreground: 115 8% 70%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 115 8% 20%;
+    --accent-foreground: 45 33% 94%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 45 33% 94%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 115 8% 25%;
+    --input: 115 8% 25%;
+    --ring: 36 84% 44%;
   }
 }
 
@@ -71,15 +77,58 @@
     @apply border-border !scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
   }
   button {
     @apply active:outline-none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-wide;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
   }
 }
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-heading font-bold text-4xl md:text-5xl text-center tracking-wide uppercase;
+  }
+  .subheading {
+    @apply font-heading font-medium text-xl md:text-2xl tracking-wide;
+  }
+  .body-text {
+    @apply font-body text-base md:text-lg;
+  }
+  .beer-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl uppercase tracking-[0.15em] leading-tight;
+  }
+  .beer-description {
+    @apply font-body text-lg leading-relaxed;
+  }
+  .beer-stats {
+    @apply font-heading text-xs uppercase tracking-wider;
+  }
+}
+
+/* Custom font declarations */
+@layer base {
+  :root {
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+  .font-heading {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+  .font-body {
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
   }
 }

@@ -4,6 +4,9 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 const Grid = () => {
   return (
     <section id="about">
+      <h1 className="heading text-custom-darkOlive font-bold text-center mb-10">
+        Learn more <span className="text-custom-lightOlive font-bold">about</span> me
+      </h1>
       <BentoGrid className="w-full py-20">
         {gridItems.map(({id, title, description, className, img, imgClassName, titleClassName, spareImg }) => (
           <BentoGridItem

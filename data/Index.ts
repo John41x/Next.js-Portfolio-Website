@@ -1,19 +1,19 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { name: "Linkedin", link: "https://www.linkedin.com/in/john-luke41/" },
+    { name: "Resume", link: "https://drive.google.com/file/d/16odDRC-_fzNJt7AZxWo8l-1e7ejixz2i/view?usp=sharing" },
   ];
   
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize designing software that maximizes the user experience",
+      title: "I strive to stand at the forefront of innovation",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/website_pic.jpg",
       spareImg: "",
     },
     {
@@ -72,32 +72,32 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Workout Buddy",
-      des: "",
+      title: "Arena",
+      des: "Intuitive Sports Management System",
       img: " ",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "/ui.earth.com",
+      link: "https://github.com/John41x",
     },
     {
       id: 2,
-      title: "Portfolio Website powered by Next.js",
-      des: "",
+      title: "Portfolio Website",
+      des: "Powered by Next.js & Tailwind CSS",
       img: " ",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "/ui.yoom.com",
     },
     {
       id: 3,
-      title: "",
-      des: "",
+      title: "Coordinating HackUTD",
+      des: "The Largest Hackathon in America",
       img: " ",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "/ui.aiimg.com",
     },
     {
       id: 4,
-      title: "",
-      des: "",
+      title: "Workout Buddy",
+      des: "AI Powered Workout Tracker",
       img: " ",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "/ui.apple.com",

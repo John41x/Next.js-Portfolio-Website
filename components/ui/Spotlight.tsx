@@ -7,10 +7,30 @@ type SpotlightProps = {
 };
 
 export const Spotlight = ({ className, fill }: SpotlightProps) => {
+  // Map fill values to actual color codes
+  const getColorValue = (color: string) => {
+    switch (color) {
+      case "darkOlive":
+        return "#384001";
+      case "olive":
+        return "#565902";
+      case "lightOlive":
+        return "#707314";
+      case "sage":
+        return "#A4A676";
+      case "cream":
+        return "#F2F0EB";
+      default:
+        return "#565902";
+    }
+  };
+
+  const colorValue = getColorValue(fill || "");
+
   return (
     <svg
       className={cn(
-        "animate-spotlight pointer-events-none absolute z-[1]  h-[169%] w-[138%] lg:w-[84%] opacity-0",
+        "animate-spotlight pointer-events-none absolute z-[1] h-[169%] w-[138%] lg:w-[84%] opacity-0",
         className
       )}
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +44,7 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
           rx="1924.71"
           ry="273.501"
           transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
-          fill={fill || "white"}
+          fill={colorValue}
           fillOpacity="0.21"
         ></ellipse>
       </g>

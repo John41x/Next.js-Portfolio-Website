@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Personal Portfolio
 
-## Getting Started
+Welcome to the repository for my personal portfolio website! This is where I showcase my work, share my thoughts, and connect with others.
 
-First, run the development server:
+## About This Site
+
+This project is built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com), giving me a fast, modern framework with powerful styling capabilities to present my content in the best possible way.
+
+## Local Development
+
+To run this site locally:
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then visit [http://localhost:3000](http://localhost:3000) to see it in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's Inside
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Portfolio Section** - A collection of my favorite projects
+- **Blog** - Where I share my thoughts and experiences
+- **About Me** - A little bit about who I am and what I do
+- **Contact** - Ways to get in touch with me
 
-## Learn More
+## Making Changes
 
-To learn more about Next.js, take a look at the following resources:
+I update this site regularly with new projects and content. I kept this in mind and implemented an index.ts file that allows for easy modification to the website. The page auto-updates as you edit the file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This site is deployed on [Vercel](https://vercel.com), which makes updates quick and painless. Every push to the main branch automatically updates the live site.
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org) for the framework
+- [React](https://reactjs.org) for the UI
+- [Tailwind CSS](https://tailwindcss.com) for styling
+- [Sentry](https://sentry.io) for error monitoring and performance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to reach out if you have questions about my work or want to connect!

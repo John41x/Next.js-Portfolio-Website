@@ -2,6 +2,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
@@ -31,15 +32,15 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-custom-sage font-bold font-heading max-w-80">
-            Enjoy The Moment
+            <TextGenerateEffect words="Enjoy The Moment" />
           </p>
 
           <h1 className="font-display text-center text-[50px] md:text-6xl lg:text-7xl uppercase tracking-[0.15em] text-custom-darkOlive leading-tight mt-5 mb-2 font-bold">
-            John&apos;s Portfolio
+            <TextGenerateEffect words="John's Portfolio" />
           </h1>
 
           <p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-xl font-body text-custom-olive font-medium">
-            A Full Stack Developer with a Passion for Innovation
+            <TextGenerateEffect words="A Full Stack Developer with a Passion for Innovation" />
           </p>
 
           <a href="#about">

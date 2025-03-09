@@ -1,6 +1,5 @@
 "use client";
-import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
@@ -10,47 +9,26 @@ export const TextGenerateEffect = ({
   words: string;
   className?: string;
 }) => {
-  const [scope, animate] = useAnimate();
-  const wordsArray = words.split(" ");
-  useEffect(() => {
-    console.log(wordsArray);
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(0.2),
-      }
-    );
-  }, [animate, wordsArray]);
+  const [displayedText, setDisplayedText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
 
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className={` ${word === "John" ? "text-custom-darkGreen" : "text-white"
-                } opacity-0`}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
-      </motion.div>
-    );
-  };
+  useEffect(() => {
+    if (currentIndex < words.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(prev => prev + words[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, 50); // Adjust speed as needed
+      
+      return () => clearTimeout(timeout);
+    } else if (!isComplete) {
+      setIsComplete(true);
+    }
+  }, [currentIndex, words, isComplete]);
 
   return (
-    <div className={cn("font-display uppercase tracking-wide", className)}>
-      <div className="my-4">
-        <div className="text-white leading-snug tracking-wide">
-          {renderWords()}
-        </div>
-      </div>
-    </div>
+    <span className={cn(className)}>
+      {displayedText}
+    </span>
   );
 };

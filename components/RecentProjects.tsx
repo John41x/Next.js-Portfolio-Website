@@ -42,9 +42,9 @@ const RecentProjects = () => {
                 <Image
                   src={(item.img && item.img.trim()) || "/placeholder.png"}
                   alt={item.title || "Project"}
-                  width={300}
-                  height={200}
-                  className="z-10 absolute bottom-0"
+                  width={400}
+                  height={300}
+                  className="z-10 absolute bottom-0 w-auto h-auto max-h-[80%]"
                 />
               </div>
 
@@ -66,7 +66,7 @@ const RecentProjects = () => {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-custom-olive/50 rounded-full bg-custom-darkOlive lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-custom-olive/50 rounded-full bg-custom-darkOlive lg:w-12 lg:h-12 w-10 h-10 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -74,9 +74,9 @@ const RecentProjects = () => {
                       <Image
                         src={icon}
                         alt="Technology icon"
-                        width={24}
-                        height={24}
-                        className="p-2"
+                        width={32}
+                        height={32}
+                        className="p-1.5"
                       />
                     </div>
                   ))}

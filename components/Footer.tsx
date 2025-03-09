@@ -7,16 +7,6 @@ import MagicButton from "./ui/MagicButton";
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10 font-body" id="contact">
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <Image
-          src="/footer-grid.svg"
-          alt="Grid background"
-          width={1920}
-          height={500}
-          className="w-full h-full opacity-30 sepia-[0.2]"
-        />
-      </div>
-
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-custom-darkOlive font-bold">
           I want to <span className="text-custom-lightOlive font-bold">Innovate</span> with you!
@@ -32,8 +22,8 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light text-custom-taupe">
-          A Next.js Website by your&apos;s truly ©
+        <p className="md:text-base text-sm md:font-normal font-light text-custom-sage">
+          A Next.js Website by yours truly ©
         </p>
 
         <div className="flex gap-3 mt-5 md:mt-0">

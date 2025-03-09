@@ -19,12 +19,12 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full dark:bg-custom-cream bg-custom-cream dark:bg-grid-white/[0.03] bg-grid-black-100/[0.07]
+        className="h-screen w-full dark:bg-custom-cream bg-custom-cream dark:bg-grid-custom-sage/[0.1] bg-grid-custom-sage/[0.15]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-custom-cream
-         bg-custom-cream [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+         bg-custom-cream [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)]"
         />
       </div>
 

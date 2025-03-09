@@ -40,7 +40,7 @@ const RecentProjects = () => {
                   />
                 </div>
                 <Image
-                  src={item.img || "/placeholder.png"}
+                  src={(item.img && item.img.trim()) || "/placeholder.png"}
                   alt={item.title || "Project"}
                   width={300}
                   height={200}

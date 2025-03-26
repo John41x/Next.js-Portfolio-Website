@@ -74,32 +74,32 @@ export const navItems = [
       id: 1,
       title: "Arena",
       des: "Intuitive Sports Management System",
-      img: "/placeholder.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      img: "/coming_soon.jpg",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
       link: "https://github.com/John41x",
     },
     {
       id: 2,
       title: "Portfolio Website",
       des: "Powered by Next.js & Tailwind CSS",
-      img: "/placeholder.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      img: "/portfolio.jpeg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
       link: "/ui.yoom.com",
     },
     {
       id: 3,
       title: "Coordinating HackUTD",
       des: "The Largest Hackathon in America",
-      img: "/placeholder.png",
+      img: "/HackUTD.jpg",
       iconLists: [],
       link: "/ui.aiimg.com",
     },
     {
       id: 4,
       title: "Workout Buddy",
-      des: "ML Enhanced Workout Tracker",
-      img: "/placeholder.png",
-      iconLists: ["/next.svg", "/ts.svg", "/python.svg", "/tail.svg", "/scikit-learn.svg"],
+      des: "AI Powered Workout Tracker",
+      img: "/coming_soon.jpg",
+      iconLists: ["/next.svg", "/python.svg", "/tail.svg", "/scikit-learn.svg"],
       link: "https://github.com/John41x",
     },
   ];
@@ -205,13 +205,16 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/John41x"
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/insta.svg",
+      link: "https://www.instagram.com/j0hn.shots/"
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/john-luke41/"
     },
   ];

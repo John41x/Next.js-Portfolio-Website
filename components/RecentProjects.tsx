@@ -26,27 +26,28 @@ const RecentProjects = () => {
               title="/github.com"
               href="https://github.com/John41x"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#A4A676" }}
-                >
-                  <Image
-                    src="/bg.png"
-                    alt="Background"
-                    width={500}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <Image
-                  src={(item.img && item.img.trim()) || "/placeholder.png"}
-                  alt={item.title || "Project"}
-                  width={400}
-                  height={300}
-                  className="z-10 absolute bottom-0 w-auto h-auto max-h-[80%]"
-                />
-              </div>
+<div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+  {/* Border wrapper with green background */}
+  <div className="relative w-full h-full lg:rounded-3xl p-2" style={{ backgroundColor: "#A4A676" }}>
+    {/* Check if it's a "Coming Soon" image and adjust size */}
+    <div
+      className={`overflow-hidden mx-auto my-auto ${
+        item.img === "/coming_soon.png" ? "w-[80%] h-[80%]" : "w-[92%] h-[92%]"
+      } lg:rounded-2xl`}
+    >
+      <Image
+        src={item.img}
+        alt={item.title || "Project"}
+        width={400}
+        height={300}
+        className="w-full h-full object-cover rounded-2xl"
+      />
+    </div>
+  </div>
+</div>
+
+
+
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-custom-darkOlive">
                 {item.title}

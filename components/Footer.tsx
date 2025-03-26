@@ -27,22 +27,27 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-3 mt-5 md:mt-0">
-          {socialMedia.map((info) => (
-            <a href="#" key={info.id}>
-              <div
-                key={info.id}
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-custom-olive/50 rounded-lg border border-white/10"
-              >
-                <Image
-                  src={info.img}
-                  alt="Social media icon"
-                  width={20}
-                  height={20}
-                />
-              </div>
-            </a>
-          ))}
-        </div>
+  {socialMedia.map((info) => (
+    <a
+      href={info.link} // Dynamically pulls the correct link from index.js
+      key={info.id}
+      target="_blank" // Opens the link in a new tab
+      rel="noopener noreferrer" // Security best practice
+    >
+      <div
+        className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-custom-olive/50 rounded-lg border border-white/10"
+      >
+        <Image
+          src={info.img}
+          alt="Social media icon"
+          width={20}
+          height={20}
+        />
+      </div>
+    </a>
+  ))}
+</div>
+
       </div>
     </footer>
   );

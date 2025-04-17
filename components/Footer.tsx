@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="w-full pt-20 pb-10 font-body" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-custom-darkOlive font-bold">
-          Let's <span className="text-custom-lightOlive font-bold">Innovate</span> Together!
+          Let&apos;s <span className="text-custom-lightOlive font-bold">Innovate</span> Together!
         </h1>
         <p className="text-center mb-6 max-w-md text-white/80">
         </p>

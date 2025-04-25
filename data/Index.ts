@@ -76,7 +76,7 @@ export const navItems = [
       des: "Intuitive Sports Management System",
       img: "/coming_soon.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-      link: "https://github.com/John41x",
+      link: "https://john-luke-portfolio.vercel.app/",
     },
     {
       id: 2,
@@ -84,7 +84,7 @@ export const navItems = [
       des: "Powered by Next.js & Tailwind CSS",
       img: "/portfolio.jpeg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-      link: "/ui.yoom.com",
+      link: "https://john-luke-portfolio.vercel.app/",
     },
     {
       id: 3,
@@ -92,7 +92,7 @@ export const navItems = [
       des: "The Largest Hackathon in America",
       img: "/HackUTD.jpg",
       iconLists: [],
-      link: "/ui.aiimg.com",
+      link: "https://hackutd.co/",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ export const navItems = [
       des: "AI Powered Workout Tracker",
       img: "/coming_soon.jpg",
       iconLists: ["/next.svg", "/python.svg", "/tail.svg", "/scikit-learn.svg"],
-      link: "https://github.com/John41x",
+      link: "https://john-luke-portfolio.vercel.app/",
     },
   ];
   
@@ -182,14 +182,14 @@ export const navItems = [
       id: 2,
       title: "",
       desc: "",
-      className: "md:col-span-2", // change to md:col-span-2
+      className: "md:col-span-2", 
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
       title: "",
       desc: "",
-      className: "md:col-span-2", // change to md:col-span-2
+      className: "md:col-span-2", 
       thumbnail: "/exp3.svg",
     },
     {
@@ -215,6 +215,6 @@ export const navItems = [
     {
       id: 3,
       img: "/link.svg",
-      link: "https://www.linkedin.com/in/john-luke41/"
+      link: "https://www.linkedin.com/in/john-luke-52012235a/"
     },
   ];

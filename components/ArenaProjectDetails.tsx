@@ -4,6 +4,7 @@ import React from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 
@@ -94,6 +95,7 @@ const ArenaProjectDetails = () => {
                 providing an intuitive platform for managing everything from player rosters to 
                 event scheduling.
               </p>
+              {/* Fixed apostrophe */}
               <p className="text-custom-olive mb-6">
                 The system features a robust REST API with 12+ endpoints across 4 core entities, 
                 persisting structured data in AWS RDS for reliable CRUD operations. Automated 
@@ -143,7 +145,7 @@ const ArenaProjectDetails = () => {
             <div>
               <h3 className="text-2xl font-bold text-custom-darkOlive mb-4">Experience Arena</h3>
               <p className="text-custom-olive mb-6">
-                Get a hands-on experience with Arena's intuitive interface and powerful features. 
+                Get a hands-on experience with Arena&apos;s intuitive interface and powerful features. 
                 The demo showcases real-world scenarios and demonstrates how the system simplifies 
                 complex sports management tasks.
               </p>
@@ -267,13 +269,13 @@ const ArenaProjectDetails = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="/#projects">
+            <Link href="/#projects">
               <MagicButton
                 title="Back to Projects"
                 icon={<FaLocationArrow />}
                 position="left"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

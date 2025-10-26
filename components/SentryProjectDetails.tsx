@@ -4,6 +4,7 @@ import React from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 
@@ -144,7 +145,7 @@ const SentryProjectDetails = () => {
             <div>
               <h3 className="text-2xl font-bold text-custom-darkOlive mb-4">Experience Sentry</h3>
               <p className="text-custom-olive mb-6">
-                Get hands-on experience with Sentry's hybrid knowledge graph fraud detection system. The demo showcases how users can 
+                Get hands-on experience with Sentry&apos;s hybrid knowledge graph fraud detection system. The demo showcases how users can 
                 ask plain-English questions and receive explainable, graph-based responses that reveal hidden fraud networks.
               </p>
               
@@ -270,13 +271,13 @@ const SentryProjectDetails = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="/#projects">
+            <Link href="/#projects">
               <MagicButton
                 title="Back to Projects"
                 icon={<FaLocationArrow />}
                 position="left"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

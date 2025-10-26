@@ -2,9 +2,8 @@
 
 import React from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
-import { PinContainer } from "./ui/3d-pin";
+import Link from "next/link";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 
@@ -160,13 +159,13 @@ const HackUTDProjectDetails = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="/#projects">
+            <Link href="/#projects">
               <MagicButton
                 title="Back to Projects"
                 icon={<FaLocationArrow />}
                 position="left"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

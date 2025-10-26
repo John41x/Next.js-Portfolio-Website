@@ -1,4 +1,3 @@
-import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data/Index";
 import PortfolioProjectDetails from "@/components/PortfolioProjectDetails";

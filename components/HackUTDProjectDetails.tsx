@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -61,6 +62,16 @@ const HackUTDProjectDetails = () => {
             <p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-xl font-body text-custom-olive font-medium">
               <TextGenerateEffect words="The largest 24 hour hackathon in North America - bringing together innovators, developers, and dreamers" />
             </p>
+
+            <div className="flex gap-4 flex-wrap justify-center">
+              <a href="https://hackutd.co/" target="_blank" rel="noopener noreferrer">
+                <MagicButton
+                  title="Visit HackUTD"
+                  icon={<FaExternalLinkAlt />}
+                  position="right"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

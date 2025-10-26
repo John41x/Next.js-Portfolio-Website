@@ -73,7 +73,7 @@ export const navItems = [
     {
       id: 1,
       title: "Arena",
-      des: "Cloud Native Sports Management System",
+      des: "AWS Cloud Native Sports Management System",
       img: "/coming_soon.jpg",
       iconLists: ["/RDS.svg", "/EC2.svg", "/python.svg", "/Lambda.svg", "/Next.js.png"],
       link: "/arena",
@@ -89,7 +89,7 @@ export const navItems = [
     {
       id: 3,
       title: "Portfolio Website",
-      des: "Powered by Next.js & Tailwind CSS",
+      des: "Powered by Next.js & Tailwind CSS - Designed to maximize the User Experience",
       img: "/portfolio.jpeg",
       iconLists: ["/Next.js.png", "/ts.svg", "/tail.svg", "/git.svg", "/Vercel.svg"],
       link: "/portfolio-website",

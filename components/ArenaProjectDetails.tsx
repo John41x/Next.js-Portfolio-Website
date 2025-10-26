@@ -93,7 +93,9 @@ const ArenaProjectDetails = () => {
                 designed to streamline operations for sports organizations, teams, and facilities. 
                 The cloud-native architecture reduces manual roster and schedule tracking by 45%, 
                 providing an intuitive platform for managing everything from player rosters to 
-                event scheduling.
+                event scheduling. Specifically designed for smaller teams such as church and small 
+                school organizations, Arena brings enterprise-grade functionality to organizations 
+                that need reliable sports management without the complexity of large-scale systems.
               </p>
               {/* Fixed apostrophe */}
               <p className="text-custom-olive mb-6">

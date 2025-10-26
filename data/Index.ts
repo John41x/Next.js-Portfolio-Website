@@ -1,6 +1,6 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
+    { name: "About", link: "/#about" },
+    { name: "Projects", link: "/#projects" },
     { name: "Linkedin", link: "https://www.linkedin.com/in/john-luke-52012235a/" },
     { name: "GitHub", link: "https://github.com/John41x" },
   ];
@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently Building an AI Powered Workout Tracker",
+      title: "Exploring Knowledge Graphs & Ontologies for Smarter AI",
       description: "Behind the Scenes",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -73,34 +73,42 @@ export const navItems = [
     {
       id: 1,
       title: "Arena",
-      des: "Intuitive Sports Management System",
+      des: "Cloud Native Sports Management System",
       img: "/coming_soon.jpg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-      link: "https://john-luke-portfolio.vercel.app/",
+      iconLists: ["/RDS.svg", "/EC2.svg", "/python.svg", "/Lambda.svg", "/Next.js.png"],
+      link: "/arena",
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      des: "Powered by Next.js & Tailwind CSS",
-      img: "/portfolio.jpeg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-      link: "https://john-luke-portfolio.vercel.app/",
+      title: "CBRE Analytics Engine 🔒",
+      des: "Agentic AI Anomaly Detection Dashboard - Leveraging Palantir",
+      img: "/Analytics Dashboard Screenshot.png",
+      iconLists: ["/Palantir.svg", "/Snowflake.png", "/OpenAI.png", "/python.svg", "/Postgresql.png"],
+      link: "/analytics-platform",
     },
     {
       id: 3,
+      title: "Portfolio Website",
+      des: "Powered by Next.js & Tailwind CSS",
+      img: "/portfolio.jpeg",
+      iconLists: ["/Next.js.png", "/ts.svg", "/tail.svg", "/git.svg", "/Vercel.svg"],
+      link: "/portfolio-website",
+    },
+    {
+      id: 4,
+      title: "Sentry",
+      des: "LLM + Knowledge Graph Research & Application",
+      img: "/coming_soon.jpg",
+      iconLists: ["/python.svg", "/neo4j.svg", "/Postgresql.png", "/Langchain.png", "/OpenAI.png"],
+      link: "/sentry",
+    },
+    {
+      id: 5,
       title: "Coordinating HackUTD",
       des: "The Largest Hackathon in America",
       img: "/HackUTD.jpg",
       iconLists: [],
-      link: "https://hackutd.co/",
-    },
-    {
-      id: 4,
-      title: "Workout Buddy",
-      des: "AI Powered Workout Tracker",
-      img: "/coming_soon.jpg",
-      iconLists: ["/next.svg", "/python.svg", "/tail.svg", "/scikit-learn.svg"],
-      link: "https://john-luke-portfolio.vercel.app/",
+      link: "/hackutd",
     },
   ];
   

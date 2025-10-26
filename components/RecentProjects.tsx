@@ -16,8 +16,9 @@ const RecentProjects = () => {
       </h1>
       <p className="uppercase text-center text-custom-olive text-s font-bold font-heading ">and more...</p>
           
+      {/* First 4 cards in grid layout */}
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {projects.slice(0, 4).map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
@@ -31,8 +32,8 @@ const RecentProjects = () => {
   <div className="relative w-full h-full lg:rounded-3xl p-2" style={{ backgroundColor: "#A4A676" }}>
     {/* Check if it's a "Coming Soon" image and adjust size */}
     <div
-      className={`overflow-hidden mx-auto my-auto ${
-        item.img === "/coming_soon.png" ? "w-[80%] h-[80%]" : "w-[92%] h-[92%]"
+      className={`overflow-hidden mx-auto my-auto border-2 border-custom-lightOlive ${
+        item.img === "/coming_soon.png" ? "w-[85%] h-[85%]" : "w-[95%] h-[95%]"
       } lg:rounded-2xl`}
     >
       <Image
@@ -40,7 +41,7 @@ const RecentProjects = () => {
         alt={item.title || "Project"}
         width={400}
         height={300}
-        className="w-full h-full object-cover rounded-2xl"
+        className="w-full h-full object-cover lg:rounded-2xl"
       />
     </div>
   </div>
@@ -84,11 +85,11 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline">
+                  <a href={item.link} className="flex items-center hover:underline">
                     <p className="flex lg:text-xl md:text-xs text-sm text-custom-darkOlive font-bold">
-                      Check Live Site
+                      Click here
                     </p>
-                    <FaLocationArrow className="ms-3" color="#384001" />
+                    <FaLocationArrow className="ms-1" color="#384001" />
                   </a>
                 </div>
               </div>
@@ -96,6 +97,57 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
+
+      {/* Fifth card as horizontal card spanning full width */}
+      {projects.length > 4 && (
+        <div className="flex justify-center p-4 mt-8">
+          <div className="w-full max-w-6xl">
+            <PinContainer
+              title="/hackutd.co"
+              href="https://hackutd.co/"
+            >
+              <div className="flex flex-col lg:flex-row items-center gap-8 p-6">
+                {/* Image section */}
+                <div className="flex-shrink-0">
+                  <div className="relative w-full lg:w-80 h-48 overflow-hidden rounded-2xl">
+                    <div className="relative w-full h-full p-2" style={{ backgroundColor: "#A4A676" }}>
+                      <div className="w-full h-full overflow-hidden rounded-xl">
+                        <Image
+                          src={projects[4].img}
+                          alt={projects[4].title}
+                          width={400}
+                          height={300}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content section */}
+                <div className="flex-1 text-center lg:text-left">
+                  <h1 className="font-bold text-2xl lg:text-3xl text-custom-darkOlive mb-4">
+                    {projects[4].title}
+                  </h1>
+
+                  <p className="text-lg lg:text-xl text-custom-olive mb-6">
+                    {projects[4].des}
+                  </p>
+
+                  <div className="flex justify-center lg:justify-start">
+                    <a href={projects[4].link} className="flex items-center hover:underline">
+                      <p className="text-lg text-custom-darkOlive font-bold">
+                        Click here
+                      </p>
+                      <FaLocationArrow className="ms-1" color="#384001" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </PinContainer>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

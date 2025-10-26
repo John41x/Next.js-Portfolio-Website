@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light text-custom-sage">
+        <p className="md:text-base text-sm md:font-normal font-light text-custom-sage mb-16 md:mb-0">
           A Next.js Website by yours truly ©
         </p>
 
@@ -34,7 +34,7 @@ const Footer = () => {
             <div key={info.id} className="relative">
               {index === 1 && (
                 <motion.div
-                  className="absolute -top-20 -right-20 whitespace-nowrap"
+                  className="absolute -top-20 -right-20 whitespace-nowrap hidden md:block"
                   animate={{ 
                     y: [0, -5, 0],
                   }}

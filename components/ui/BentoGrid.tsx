@@ -85,7 +85,7 @@ export const BentoGridItem = ({
     >
       {id === 2 ? (
         <div className="absolute inset-0 w-full h-full">
-          <EvervaultCard text="Transform " subtitle="challenges into breakthroughs" className="w-full h-full" />
+          <EvervaultCard text="Check Out " subtitle="A Deep Dive Into LLM Hallucination Prevention - Sentry" className="w-full h-full" />
         </div>
       ) : (
         <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -128,7 +128,7 @@ export const BentoGridItem = ({
               "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
             )}
           >
-            <div className="font-body font-semibold md:max-w-32 md:text-xs lg:text-base text-sm text-custom-cream z-10">
+            <div className="font-body font-semibold md:max-w-32 md:text-xs lg:text-base text-sm text-custom-cream z-10 whitespace-nowrap">
               {description}
             </div>
             <div

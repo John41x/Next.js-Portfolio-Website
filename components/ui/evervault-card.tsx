@@ -56,7 +56,7 @@ export const EvervaultCard = ({
           <div className="flex flex-col items-center">
             <span className="dark:text-white text-black z-20 text-2xl font-bold">{text}</span>
             {subtitle && (
-              <span className="dark:text-white text-black z-20 text-xs mt-1 font-normal max-w-[80%] text-center">{subtitle}</span>
+              <span className="dark:text-white text-black z-20 text-sm md:text-xs lg:text-base mt-1 font-normal max-w-[85%] text-center leading-tight">{subtitle}</span>
             )}
           </div>
         </div>

@@ -19,7 +19,8 @@ const RecentProjects = () => {
       {/* First 4 cards in grid layout */}
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.slice(0, 4).map((item) => (
-          <div
+          <a
+            href={item.link}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
@@ -85,23 +86,22 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <a href={item.link} className="flex items-center hover:underline">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-custom-darkOlive font-bold">
-                      Click here
-                    </p>
-                    <FaLocationArrow className="ms-1" color="#384001" />
-                  </a>
+                  <p className="flex lg:text-xl md:text-xs text-sm text-custom-darkOlive font-bold opacity-75">
+                    View Project
+                  </p>
+                  <FaLocationArrow className="ms-1" color="#384001" />
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         ))}
       </div>
 
       {/* Fifth card - vertical on mobile, horizontal on desktop */}
       {projects.length > 4 && (
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-8 lg:hidden">
-          <div
+          <a
+            href={projects[4].link}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
           >
             <PinContainer
@@ -158,16 +158,14 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <a href={projects[4].link} className="flex items-center hover:underline">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-custom-darkOlive font-bold">
-                      Click here
-                    </p>
-                    <FaLocationArrow className="ms-1" color="#384001" />
-                  </a>
+                  <p className="flex lg:text-xl md:text-xs text-sm text-custom-darkOlive font-bold opacity-75">
+                    View Project
+                  </p>
+                  <FaLocationArrow className="ms-1" color="#384001" />
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         </div>
       )}
 
@@ -175,7 +173,10 @@ const RecentProjects = () => {
       {projects.length > 4 && (
         <div className="hidden lg:flex justify-center p-4 mt-8">
           <div className="w-full max-w-6xl">
-            <div className="lg:min-h-[20rem] flex items-center justify-center">
+            <a
+              href={projects[4].link}
+              className="lg:min-h-[20rem] flex items-center justify-center w-full"
+            >
               <PinContainer
                 title="/hackutd.co"
                 href="https://hackutd.co/"
@@ -209,17 +210,15 @@ const RecentProjects = () => {
                     </p>
 
                     <div className="flex justify-start">
-                      <a href={projects[4].link} className="flex items-center hover:underline">
-                        <p className="text-lg text-custom-darkOlive font-bold">
-                          Click here
-                        </p>
-                        <FaLocationArrow className="ms-1" color="#384001" />
-                      </a>
+                      <p className="text-lg text-custom-darkOlive font-bold opacity-75 flex items-center">
+                        View Project
+                      </p>
+                      <FaLocationArrow className="ms-1" color="#384001" />
                     </div>
                   </div>
                 </div>
               </PinContainer>
-            </div>
+            </a>
           </div>
         </div>
       )}

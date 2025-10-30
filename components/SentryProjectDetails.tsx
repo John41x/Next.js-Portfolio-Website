@@ -61,7 +61,7 @@ const SentryProjectDetails = () => {
             <div className="flex gap-4 flex-wrap justify-center">
               <a href="#demo">
                 <MagicButton
-                  title="View Demo"
+                  title="View Project"
                   icon={<FaExternalLinkAlt />}
                   position="right"
                 />
@@ -77,6 +77,52 @@ const SentryProjectDetails = () => {
           </div>
         </div>
       </div>
+
+      {/* Research Paper Section */}
+      <section id="research" className="py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="heading text-custom-darkOlive font-bold text-center mb-10">
+            Research <span className="text-custom-lightOlive font-bold">Paper</span>
+          </h2>
+          
+          <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-custom-darkOlive mb-3">
+                  LLMs + Knowledge Graphs: Building the Cognitive Architecture for Human-Like AI
+                </h3>
+                <p className="text-custom-olive mb-4">
+                  Coming Soon
+                </p>
+                <div className="flex flex-wrap gap-4 text-sm text-custom-olive">
+                  <div className="flex items-center">
+                    <span className="font-semibold text-custom-darkOlive mr-2">Topics:</span>
+                    <span>LLM Hallucination Prevention, Knowledge Graphs, Fraud Detection, Explainable AI</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <a 
+                  href="#" 
+                  className="bg-custom-darkOlive text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Full Paper
+                </a>
+                <a 
+                  href="#" 
+                  className="border-2 border-custom-darkOlive text-custom-darkOlive px-6 py-3 rounded-lg font-semibold hover:bg-custom-darkOlive hover:text-white transition-colors text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Project Overview */}
       <section id="overview" className="py-20">

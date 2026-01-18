@@ -77,8 +77,8 @@ const RecentProjects = () => {
                       <Image
                         src={icon}
                         alt="Technology icon"
-                        width={32}
-                        height={32}
+                        width={icon === "/java.svg" ? 36 : 32}
+                        height={icon === "/java.svg" ? 36 : 32}
                         className="p-1.5"
                       />
                     </div>
@@ -149,8 +149,8 @@ const RecentProjects = () => {
                       <Image
                         src={icon}
                         alt="Technology icon"
-                        width={32}
-                        height={32}
+                        width={icon === "/java.svg" ? 36 : 32}
+                        height={icon === "/java.svg" ? 36 : 32}
                         className="p-1.5"
                       />
                     </div>

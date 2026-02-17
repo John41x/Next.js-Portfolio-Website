@@ -20,7 +20,7 @@ Create a `.env.local` file in the root of your project (if it doesn't exist):
 
 ```bash
 # .env.local
-NEXT_PUBLIC_CBRE_ANALYTICS_PASSWORD=rise8054
+NEXT_PUBLIC_CBRE_ANALYTICS_PASSWORD=your_secure_password_here
 ```
 
 **Important**: 

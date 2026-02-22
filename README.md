@@ -8,7 +8,7 @@ This project is built with [Next.js](https://nextjs.org) and [Tailwind CSS](http
 
 ## Local Development
 
-To run this site locally:
+To run this site locally (dummy edit):
 
 ```bash
 # Install dependencies
